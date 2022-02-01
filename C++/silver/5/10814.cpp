@@ -1,3 +1,7 @@
+/*
+    카운터 정렬을 사용해 정렬
+*/
+
 #include <iostream>
 #include <vector>
 #include <string>
@@ -28,11 +32,11 @@ int main(){
 
     sum[0] = arr[0];
 
-    for(int i = 0; i <= 200; i++){
+    for(int i = 0; i <= 200; i++){                                  //누적합 구하기
         sum[i] = arr[i] + sum[i - 1];
     }
 
-    for(int i = v1.size() - 1; i >= 0; i--){
+    for(int i = v1.size() - 1; i >= 0; i--){                        //카운팅정렬
         v2[sum[v1[i].first] - 1] = v1[i];
         sum[v1[i].first]--;
     }
