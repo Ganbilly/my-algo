@@ -5,6 +5,8 @@
         "iosfwd": "cpp",
         "cmath": "cpp",
         "utility": "cpp",
-        "xiosbase": "cpp"
+        "xiosbase": "cpp",
+        "xlocale": "cpp",
+        "queue": "cpp"
     }
 }
