@@ -31,8 +31,8 @@ void dfs(vp graph, int *arr, int start ){
 void bfs(vp graph, int *arr, int start ){
     int size;
     int tmp;
-    priority_queue<int, vector<int>, greater<int>> pq;
-    priority_queue<int, vector<int>, greater<int>> standby;
+    queue<int> pq;
+    queue<int> standby;
 
     size = graph[start].size();
    
@@ -47,7 +47,7 @@ void bfs(vp graph, int *arr, int start ){
     }
 
     while(!pq.empty()){
-        tmp = pq.top();
+        tmp = pq.front();
         cout << tmp << ' ';
         size = graph[tmp].size();
 
@@ -60,8 +60,13 @@ void bfs(vp graph, int *arr, int start ){
         }
         pq.pop();
 
-        if(pq.empty())
-            pq.swap(standby);
+        if(pq.empty()){
+            while(!standby.empty()){
+                pq.push(standby.front());
+                standby.pop();
+            }
+
+        }
     }
 
     return;
