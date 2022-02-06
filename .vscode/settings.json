@@ -8,6 +8,7 @@
         "xiosbase": "cpp",
         "xlocale": "cpp",
         "queue": "cpp",
-        "deque": "cpp"
+        "deque": "cpp",
+        "algorithm": "cpp"
     }
 }
