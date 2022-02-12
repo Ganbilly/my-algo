@@ -9,6 +9,7 @@
         "xlocale": "cpp",
         "queue": "cpp",
         "deque": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "iostream": "cpp"
     }
 }
