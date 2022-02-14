@@ -22,8 +22,8 @@ int main(){
     cin.tie(NULL);
 
     int t, m ,n, k, count;
-    int **arr1;
-    int **arr2;
+    int **arr1;                 //배추위치
+    int **arr2;                 //벌레위치
     int x, y;
     cin >> t;
 
