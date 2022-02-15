@@ -18,8 +18,6 @@ void combi(vector<int> v, int n, int m){
             v.pop_back();
         }
     }
-        
-
 }
 int main(){
 
