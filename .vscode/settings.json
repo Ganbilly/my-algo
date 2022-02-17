@@ -10,6 +10,8 @@
         "queue": "cpp",
         "deque": "cpp",
         "algorithm": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "type_traits": "cpp",
+        "xutility": "cpp"
     }
 }
