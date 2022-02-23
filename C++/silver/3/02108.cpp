@@ -56,7 +56,10 @@ int main(){
         p = v2[0];
     }
 
-    cout << abs(round(avg)) << '\n';
+    if(round(avg)==-0)
+        cout << 0 <<'\n';
+    else
+        cout << round(avg) << '\n';
     cout << v[n / 2] << '\n';
     cout << p.second <<'\n';
     cout << *v.rbegin() - *v.begin() << '\n';
