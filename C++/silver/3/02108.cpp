@@ -31,6 +31,7 @@ int main(){
         v.push_back(input);
     }
     avg /= n;
+    
     sort(v.begin(), v.end());
 
     v2.push_back({0, v[0]});
@@ -44,7 +45,7 @@ int main(){
     }
     sort(v2.begin(), v2.end(), compare);
 
-    if(v2.size() > 2){
+    if(v2.size() >= 2){
         if(v2[v2.size() - 1].first == v2[v2.size() - 2].first)
             p = v2[v2.size() -2];
         else
@@ -55,7 +56,7 @@ int main(){
         p = v2[0];
     }
 
-    cout << round(avg) << '\n';
+    cout << abs(round(avg)) << '\n';
     cout << v[n / 2] << '\n';
     cout << p.second <<'\n';
     cout << *v.rbegin() - *v.begin() << '\n';
