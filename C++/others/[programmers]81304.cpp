@@ -36,7 +36,7 @@ int solution(int n, int start, int end, vector<vector<int>> roads, vector<int> t
     priority_queue<info, vector<info>, cmp> pq;
     
     for(int i = 0; i < traps.size(); i++)
-        t[traps[i]] = i;
+        t[traps[i]] = i;                            
 
     for(int i = 0; i < roads.size(); i++){
         a = roads[i][0];
@@ -49,7 +49,7 @@ int solution(int n, int start, int end, vector<vector<int>> roads, vector<int> t
     
     for(int i = 1; i <= n; i++){
         for(int j = 0; j < (1 << traps.size()); j++){
-            dist[i][j] = INF;
+            dist[i][j] = INF;                           //dist[n]][j] = j의 폭탄 상태일때,. n까는 최단거리
         }
     }
 
