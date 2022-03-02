@@ -29,15 +29,15 @@ int max(int a, int b, int c){
 }
 
 void fillleft(int row){
-    leftarr[0] = arr[row - 1][0];
+    leftarr[0] = arr[row - 1][0] + arr[row][0];
     for(int i = 1; i < m; i++){
         leftarr[i] = max(leftarr[i - 1], arr[row - 1][i]) + arr[row][i];
     }
 }
 
 void fillright(int row){
-    rightarr[m - 1] = arr[row - 1][m - 1];
-    for(int i = m - 1; i >= 0; i--){
+    rightarr[m - 1] = arr[row - 1][m - 1] + arr[row][m - 1];
+    for(int i = m - 2; i >= 0; i--){
         rightarr[i] = max(rightarr[i + 1], arr[row - 1][i]) + arr[row][i];
     }
 }
