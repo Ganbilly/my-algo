@@ -21,4 +21,4 @@ for answer in range(maxl, 0, -1):
                 exit()
              
         if (i + answer >= n):
-            breakW
+            break
